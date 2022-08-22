@@ -1,0 +1,39 @@
+@media only screen and (max-width: 800px) {
+    .topnav {
+        background: linear-gradient(105deg, #ff5555, #e59c00, #00cf9f, #009bd3, #003cd3);
+        background-size: 400% 400%;
+        animation: gradient 5s ease-in-out infinite;
+    }
+
+    .navbar-brand img {
+        height: 70px;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 2.3rem !important;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 16px !important;
+    }
+
+    .homesnap {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbtn {
+        display: none !important;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+}

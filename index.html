@@ -47,58 +47,74 @@
         </lottie-player>
     </div>
     <div style="display:none;" id="main" class="animate-bottom main">
-        <!-- NavBar -->
-        <div class="sticky-top">
-            <nav class="navbar navbar-expand-md ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="http://www.kiruvin.com/images/KiruvinCreationsMedia.png" loading="lazy" title="Kumaran Travels"
-                            alt="Kumaran Travels logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <!-- top and nav -->
+        <div class="topnav">
+            <!-- NavBar -->
+            <div class="sticky-top">
+                <nav class="navbar navbar-expand-md ">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo" src="images/Kiruvin.png" loading="lazy" title="Kiruvin Creations"
+                                alt="Kiruvin Creations logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" title="Home" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" title="About" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" title="Packages" href="packages.html">Packages</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" title="Click To See Tour Plans"
-                                    id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Tour Plans
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" title="Kumaran Travels Domestic Train Tour"
-                                            href="domestic-tour.html">Domestic Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Special Tour"
-                                            href="special-tour.html">Special
-                                            Tour</a></li>
-                                    <li><a class="dropdown-item" title="Kumaran Travels Foreign Tour"
-                                            href="foreign-tour.html">Foreign
-                                            Tour</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" title="Terms and Conditions" href="terms.html">T&C</a>
-                            </li>
-                        </ul>
-                        <a class="btn btn-light" href="contact.html"
-                            style="margin-left: 10px; margin-right: 1rem;font-size: 20px ;"
-                            title="Contact Kumaran Travels" type="button">Contact</a>
+                        <div class="collapse navbar-collapse justify-content-center " id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" title="Home"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" title="About" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" title="Packages" href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" title="Team" href="#">Team</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-light navbtn top-btn" href="contact.html"
+                            style="margin-right: 1rem;font-size: 18px; " title="Contact Kiruvin Creations"
+                            type="button">Let's Go Online</a>
+                    </div>
+                </nav>
+            </div>
+            <!-- top -->
+            <section id="home">
+                <div class="row">
+                    <div class="col-md-6 home-left">
+                        <h5>#We Are Owliens</h5>
+                        <h1>We Make Digital Marketing Simple.</h1>
+                        <p class="para">
+                            Kiruvin helps you to reach your customers. We provide the perfect services like Social Media
+                            Marketing, SEO, Web Design & Development, Branding & Advertising and more to grow your
+                            business.
+                        </p>
+                        <!-- <p title="Opening Time" class="time"><i class="far fa-clock"></i>8AM - 12PM, 6PM - 9PM</p>
+                        <a title="Call SAI's tooth care" class="time" href="tel:+9198414 05334"><i
+                                class="fas fa-phone-alt"></i>+91 - 98414 05334</a> -->
+
+                        <button class="btn btn-light top-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            title="Book an Appointment" type="button">Let's Go Online</buttons>
+                    </div>
+                    <div class="col-md-6 home-right justify-content-center">
+                        <lottie-player class="homesnap"
+                            src="https://assets1.lottiefiles.com/packages/lf20_cdu97cbh.json" background="transparent"
+                            speed="1" loop autoplay>
+                        </lottie-player>
                     </div>
                 </div>
-            </nav>
+            </section>
+
+            <!-- Services -->
+            <section id="services"></section>
         </div>
     </div>
 
