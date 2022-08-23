@@ -81,6 +81,10 @@
         font-size: 2.5rem !important;
     }
 
+    h5 {
+        font-size: 1.45rem !important;
+    }
+
     /* wwd */
     #wwd {
         padding: 12% 4% 4% !important;
@@ -105,5 +109,14 @@
     .service-lottie {
         width: 100% !important;
         height: 100% !important;
+    }
+
+    .lg-lottie {
+        width: 90% !important;
+        height: 90% !important;
+    }
+
+    .sm-lottie {
+        margin: 2% 0 25px !important;
     }
 }
