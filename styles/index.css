@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 * {
@@ -67,7 +66,7 @@
 }
 
 .navbar-brand img {
-    height: 90px;
+    height: 80px;
     padding-left: 1rem;
     padding-right: 0;
 }
@@ -91,7 +90,6 @@ ul {
 }
 
 .nav-link {
-    color: #343434 !important;
     letter-spacing: 1px;
     font-weight: 600 !important;
     font-size: 18px !important;
@@ -102,19 +100,16 @@ ul {
     text-decoration: none;
 }
 
-.nav-link.active {
-    font-weight: 600 !important;
-    color: #25BEEF !important;
-}
-
 .nav-link::after {
     position: absolute;
-    top: 30px;
+    text-align: center !important;
+    top: 35px;
     left: 8px;
     content: "";
     width: 0%;
+    border-radius: 3px;
     height: 3px;
-    background-color: #343434 !important;
+    background: linear-gradient(42deg, #FE8081 0%, #8180FE 100%) !important;
     transition: all 0.5s;
 }
 
@@ -122,9 +117,53 @@ ul {
     width: 75%;
 }
 
-.nav-link.active {
+.nav-link.active::after {
     font-weight: 600 !important;
-    color: #3c3c3c !important;
+    width: 65%;
+}
+
+.dropdown {
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif !important;
+    font-weight: 600 !important;
+    transition: 0.5s;
+}
+
+.dropdown p {
+    margin-bottom: 0 !important;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    padding-top: 10px;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(235, 235, 235);
+    color: rgb(255, 11, 11);
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.5s;
 }
 
 .navbar-toggler-icon {
@@ -133,9 +172,8 @@ ul {
 
 .navbtn {
     margin-right: 1rem !important;
-    color: #343434 !important;
-    background: transparent !important;
-    border-color: #343434 !important;
+    color: #fff !important;
+    background: linear-gradient(42deg, #FE8081 0%, #8180FE 100%) !important;
     border-width: 2.5px !important;
     border-radius: 50px !important;
     font-family: 'Questrial', sans-serif !important;
@@ -143,14 +181,12 @@ ul {
     font-size: 18px !important;
     font-weight: 600 !important;
     padding: 10px 20px !important;
-    transition: 300ms !important;
+    transition: all 0.3s !important;
 }
 
 .navbtn:hover {
-    color: #343434 !important;
     transform: scale(1.05) !important;
-    border-color: #343434 !important;
-    background: #80808027 !important;
+    background: linear-gradient(42deg, #FE8081 0%, #8180FE 100%) !important;
 }
 
 h1 {
@@ -200,22 +236,38 @@ p {
     color: #fff !important;
     display: flex;
     align-items: center;
-    background: linear-gradient(-45deg, #ff5555, #e59c00, #00bd91, #009bd3, #003cd3);
-    background-size: 600% 600%;
-    animation: gradient 5s ease-in-out infinite;
+    background: linear-gradient(-40deg, #e800aa, #ff4747, #d79300, #29ce00, #00b86e, #0092db, #0055ff, #b000fb);
+    background-size: 700% 700%;
+    animation: gradient 8s ease-in-out infinite;
 }
 
 @keyframes gradient {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 25%;
     }
 
-    50% {
-        background-position: 100% 50%;
+    15% {
+        background-position: 25% 50%;
+    }
+
+    30% {
+        background-position: 50% 75%;
+    }
+
+    45% {
+        background-position: 75% 100%;
+    }
+
+    60% {
+        background-position: 75% 50%;
+    }
+
+    85% {
+        background-position: 50% 25%;
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 25% 0%;
     }
 }
 
@@ -227,7 +279,6 @@ p {
 .para {
     font-size: 20px !important;
     margin-bottom: 1rem !important;
-    opacity: 95%;
 }
 
 .top-btn {
@@ -238,9 +289,10 @@ p {
     font-family: 'Questrial', sans-serif !important;
     letter-spacing: 1px;
     font-size: 18px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     padding: 10px 20px !important;
     transition: 300ms !important;
+    z-index: 5;
 }
 
 .top-btn:hover {
@@ -273,7 +325,7 @@ p {
 
 #wwd .row {
     color: #000 !important;
-    padding: 5% 2% 0 !important;
+    padding: 5% 1% 0 !important;
     text-align: left !important;
 }
 
@@ -346,21 +398,59 @@ p {
     font-size: 18px !important;
     font-weight: 500 !important;
     padding: 8px 20px !important;
-    transition: 300ms !important;
+    transition: all 0.3s !important;
 }
 
 .more-btn:hover {
     color: #fff !important;
     transform: scale(1.05) !important;
-    border-color: white !important;
-    /* background: rgba(255, 255, 255, 0.263) !important; */
+    background: linear-gradient(-42deg, #FE8081 0%, #8180FE 100%) !important;
+}
+
+/* Banner */
+
+#banner {
+    padding: 4% 25%;
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(120deg, #7944FB 0%, #bfaef6 100%) !important;
+    z-index: -9;
+}
+
+.banner-lottie {
+    position: absolute;
+    margin-top: 10rem;
+    width: 25%;
+    right: 0;
+    background-position: right bottom;
+    z-index: 1;
+}
+
+#banner h4 {
+    font-size: 2rem;
+    font-family: 'Albert Sans', sans-serif !important;
+}
+
+/* works */
+#works {
+    padding: 5% !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*****Footer*****/
 #footer {
     padding: 2% 6%;
     color: #fff !important;
-    background-color: #13161a !important;
+    background: linear-gradient( #38363d 0%, #060016 100%) !important;
     text-align: left;
 }
 

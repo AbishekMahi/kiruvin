@@ -11,7 +11,7 @@
     }
 
     .nav-link {
-        font-size: 20px !important;
+        color: #33322f !important;
     }
 
     h1 {
@@ -70,11 +70,34 @@
     }
 
     /* services */
+    /* banner  */
+    #banner {
+        padding: 10%;
+        min-height: 30vh;
+    }
+
+    .banner-lottie {
+        position: absolute;
+        margin-top: 11rem;
+        width: 45%;
+    }
+
+    #banner h4 {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (max-width: 600px) {
+    .sticky-top {
+        backdrop-filter: blur(20px);
+    }
+
     .navbtn {
         display: none !important;
+    }
+
+    .nav-link {
+        font-size: 20px !important;
     }
 
     h1 {
@@ -118,5 +141,16 @@
 
     .sm-lottie {
         margin: 2% 0 25px !important;
+    }
+
+    /* banner  */
+    #banner {
+        padding: 10%;
+        min-height: 50vh;
+    }
+
+    .banner-lottie {
+        margin-top: 15rem;
+        width: 50%;
     }
 }
