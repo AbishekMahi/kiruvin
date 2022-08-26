@@ -102,6 +102,20 @@
         width: 100%;
         z-index: -2;
     }
+
+    /* top banner */
+    #top-banner {
+        margin-top: -8rem !important;
+        padding: 7rem 8% 4%;
+    }
+
+    .abt-left {
+        margin-top: -10rem !important;
+    }
+
+    .abt-left-lottie {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -111,6 +125,13 @@
 
     .navbtn {
         display: none !important;
+    }
+
+    .nav-link.active::after {
+        font-weight: 600 !important;
+        width: 65%;
+        top: 35px;
+        left: 16%;
     }
 
     .navbar-brand img {
@@ -194,5 +215,19 @@
     .client-lottie {
         width: 100%;
         margin-top: -100px;
+    }
+
+    /* top Banner */
+    #top-banner {
+        margin-top: -8rem !important;
+        padding: 9rem 8% 4%;
+    }
+
+    .top-banner-lottie {
+        display: none;
+    }
+
+    .abt-left-lottie {
+        width: 90%;
     }
 }
