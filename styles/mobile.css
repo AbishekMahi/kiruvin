@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 820px) {
     .topnav {
         background: linear-gradient(105deg, #ff5555, #e59c00, #00cf9f, #009bd3, #003cd3);
         background-size: 400% 400%;
@@ -8,10 +8,6 @@
     .navbar-brand img {
         height: 70px;
         padding-left: 0;
-    }
-
-    .nav-link {
-        color: #33322f !important;
     }
 
     h1 {
@@ -109,6 +105,12 @@
         padding: 7rem 8% 4%;
     }
 
+    .top-banner-lottie {
+        position: absolute;
+        width: 28rem;
+        right: 0;
+    }
+
     .abt-left {
         margin-top: -10rem !important;
     }
@@ -116,6 +118,9 @@
     .abt-left-lottie {
         width: 100%;
     }
+
+    /* team */
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -125,6 +130,18 @@
 
     .navbtn {
         display: none !important;
+    }
+
+    .nav-link {
+        color: #33322f !important;
+    }
+
+    .nav-link::after {
+        left: 17%;
+    }
+
+    .nav-link:hover::after {
+        width: 65%;
     }
 
     .nav-link.active::after {
@@ -229,5 +246,30 @@
 
     .abt-left-lottie {
         width: 90%;
+    }
+
+    /* team */
+    .team-card {
+        margin: 10px 0 !important;
+    }
+
+    .team-pic {
+        margin-top: -80px;
+        width: 160px;
+    }
+
+    .s-icon {
+        margin: 5px auto !important;
+        width: 42px;
+        height: 42px;
+    }
+
+    .facebook,
+    .twitter,
+    .instagram,
+    .linkedin {
+        color: white !important;
+        border-radius: 50px !important;
+        font-size: 20px !important;
     }
 }
