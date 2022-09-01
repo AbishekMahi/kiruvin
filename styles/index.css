@@ -600,7 +600,8 @@ p {
 }
 
 /* team */
-#team {
+#team,
+#portfolio {
     padding: 7% 7% 0;
     display: flex;
     flex-direction: column;
@@ -617,6 +618,7 @@ p {
 
 .team-card {
     height: 100% !important;
+    background-color: #fff2f2 !important;
     border-radius: 10px !important;
     border: 0 solid !important;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
@@ -625,6 +627,15 @@ p {
     display: flex !important;
     flex-direction: column;
     align-items: center;
+}
+
+.team-card h5 {
+    margin-top: 15px !important;
+}
+
+.works-link {
+    text-decoration: none !important;
+    color: #000 !important;
 }
 
 .team-card p {
@@ -725,6 +736,7 @@ p {
     text-align: center;
     text-decoration: none;
     transition: 200ms !important;
+    color: #fff !important;
 }
 
 .s-icon:hover {
