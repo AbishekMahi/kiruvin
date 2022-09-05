@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Kiruvin Creations</title>
+    <link rel="icon" href="images/kiruvin-logo.png">
+    <meta name="theme-color" content="#4C50CC">
+    <meta name="description"
+        content="Kiruvin Creations is a digital marketing company in Chennai that helps to reach your business to your customers. We offer the perfect services like Social Media Marketing, SEO, Responsive Web Design & Development, Branding & Advertising to grow your business.">
+    <meta name="keywords"
+        content="Kiruvin Creations, Kiruvin Media, Kiruvin, kiruvin creation, kiruvin.in, kiruvin.com, we are owliens, Pay Per Click services in chennai, digital advertising company, digital marketing company, digital advertising agency in chennai, digital marketing company in chennai, seo company, seo company in chennai, 
+        digital marketing agency in chennai, social media marketing for small business, google ads, marketing for small business, Social Media Marketing, digital marketing companies in chennai, TamilNadu, meinigar media, meinigar, sales beats digital company, sales beats">
+    <meta name=”robots” content="index, follow">
+    <meta name="googlebot" content="index">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thank You - Kiruvin Creations">
+    <meta property="og:site_name"
+        content="Kiruvin Creations is a digital marketing company in Chennai that helps to reach your business to your customers. We offer the perfect services like Social Media Marketing, SEO, Responsive Web Design & Development, Branding & Advertising to grow your business.">
+    <meta property="og:url" content="http://www.kiruvin.com/">
+    <meta property="og:description"
+        content="Kiruvin Creations is a digital marketing company in Chennai that helps to reach your business to your customers. We offer the perfect services like Social Media Marketing, SEO, Responsive Web Design & Development, Branding & Advertising to grow your business.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="twitter:title" content="Thank You - Kiruvin Creations">
+    <meta property="twitter:description"
+        content="Kiruvin Creations is a digital marketing company in Chennai that helps to reach your business to your customers. We offer the perfect services like Social Media Marketing, SEO, Responsive Web Design & Development, Branding & Advertising to grow your business.">
+    <meta property="twitter:image" content="images/kiruvin-logo.jpg">
+    <meta property="twitter:card" content="summary">
+    <meta data-n-head="ssr" data-hid="og:url" name="og:url" content="http://www.kiruvin.com/">
+    <meta data-n-head="ssr" data-hid="og:site_name" name="og:site_name" content="Thank You - Kiruvin Creations">
+    <meta data-n-head="ssr" data-hid="twitter:site" name="twitter:site" content="@KiruvinMedia">
+    <meta data-n-head="ssr" data-hid="twitter:creator" name="twitter:creator" content="@AbishekMahi0708">
+    <link rel="canonical" href="http://www.kiruvin.com/">
+    <!-- css -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body onload="pageLoader()">
+    <div id="loader">
+        <lottie-player src="images/loading-owl.json" background="transparent" speed="1" loop autoplay>
+        </lottie-player>
+    </div>
+    <div style="display:none;" id="main" class="animate-bottom main">
+        <!-- Thank you -->
+        <section id="thanks">
+
+            <div class="thanks-lottie">
+                <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_snmbndsh.json"
+                    background="transparent" speed="1.2" loop autoplay>
+                </lottie-player>
+            </div>
+            <h2>Your Form Submitted Succesfully</h2>
+            <a class="btn btn-light more-btn" href="index.html" title="Contact Kiruvin Creations" type="button"><i
+                    style="margin-right: 20px;" class="fas fa-arrow-left"></i>Back To Home</a>
+            <center>
+                <p class="font3">Copyright © 2022
+                    <a title="Kiruvin Creations" target="_blank" href="https://www.kiruvin.com/">Kiruvin Creations.</a>
+                    All Rights Reserved.
+                </p>
+            </center>
+            <!-- <a  class="col" href="index.html"><img id="logodown" title="Kiruvin Creations logo" loading="lazy"
+                src="images/Kiruvin.png" alt="Kiruvin Creations logo" height="50"></a> -->
+            <div class="row"> 
+                <div class="col">
+                    <a class="btn facebook s-icon" href="#" title="Facebook" role="button"><i
+                            class="fab fa-facebook-f "></i></a>
+                </div>
+                <div class="col">
+                    <a class="btn instagram s-icon" href="#" title="Instagram" role="button"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col">
+                    <a class="btn twitter s-icon" href="#" title="Twitter" role="button"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+                <div class="col">
+                    <a class="btn linkedin s-icon" href="#" title="Linkedin" role="button"><i
+                            class="fab fa-linkedin-in"></i></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var myVar;
+
+        function pageLoader() {
+            myVar = setTimeout(showPage);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("main").style.display = "block";
+        }
+
+        $(document).ready(function () {
+            var scroll_pos = 0;
+            $(document).scroll(function () {
+                scroll_pos = $(this).scrollTop();
+                if (scroll_pos > 340) {
+                    $('.nav-link').css('color', '#000');
+                } else {
+                    $('.nav-link').css('color', '#fff');
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+
+</html>

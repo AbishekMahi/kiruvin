@@ -410,14 +410,14 @@ p {
 
 .more-btn {
     color: #fff !important;
-    width: 150px !important;
+    /* width: 150px !important; */
     background: linear-gradient(42deg, #FE8081 0%, #8180FE 100%) !important;
     border-width: 2.5px !important;
     border-radius: 50px !important;
     font-family: 'Questrial', sans-serif !important;
     letter-spacing: 1px;
     font-size: 18px !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     padding: 8px 20px !important;
     transition: all 0.3s !important;
 }
@@ -656,6 +656,7 @@ p {
     padding: 10px !important;
 }
 
+
 /*****Footer*****/
 #footer {
     padding: 2% 6%;
@@ -766,4 +767,21 @@ p {
 
 .linkedin {
     background-color: #007BB5 !important;
+}
+
+
+/* thank you */
+#thanks {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-lottie {
+    width: 250px;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    z-index: -2;
 }
