@@ -22,6 +22,28 @@
     margin: -100px 0 0 -100px;
 }
 
+.whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #25D366;
+    color: white;
+    cursor: pointer;
+    padding: 10px 17px 8px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 300ms;
+}
+
+.whatsapp:hover {
+    color: white;
+    bottom: 35px;
+    /* transform: scale(1.05) !important; */
+}
+
 /*******   Scrollbar   *******/
 
 ::-webkit-scrollbar {
