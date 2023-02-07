@@ -372,3 +372,47 @@ div.form-header-group.hasImage {
 .form-textbox {
     font-size: 16px;
 }
+
+.contact-row {
+    padding: 3%;
+    display: flex !important;
+    flex-wrap: wrap-reverse !important;
+}
+
+address {
+    margin-bottom: 0 !important;
+    text-align: left !important;
+}
+
+.address {
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: left;
+    padding: 2rem !important;
+}
+
+.time {
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sicon-row {
+    padding-left: .8rem;
+    padding-bottom: 2rem;
+}
+
+.c-icon {
+    color: #E20922 !important;
+    padding-right: 10px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.s-icon:hover {
+    opacity: 0.8;
+}

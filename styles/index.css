@@ -16,10 +16,44 @@
 #loader {
     position: absolute;
     left: 50%;
-    top: 22%;
+    top: 48%;
     z-index: 1;
     width: 200px;
     margin: -100px 0 0 -100px;
+    background-color: #fff;
+}
+
+#popup {
+    z-index: 7;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.548);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.contentBox {
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+#close {
+    position: relative;
+    dispLay: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 20px;
+    left: 550px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #3d3d3d7c;
 }
 
 .whatsapp {
@@ -76,6 +110,7 @@
 
 .sticky-top {
     backdrop-filter: blur(20px);
+    z-index: 6 !important;
 }
 
 .navbar-brand {
@@ -250,7 +285,8 @@ h3 {
 
 h5 {
     font-size: 1.6rem !important;
-    font-weight: 700 !important;
+    font-weight: 600 !important;
+    color: #444444 !important;
 }
 
 h6 {
@@ -273,7 +309,7 @@ p {
     align-items: center;
     background: linear-gradient(-40deg, #e800aa, #ff4747, #d79300, #29ce00, #00b86e, #0092db, #0055ff, #b000fb);
     background-size: 700% 700%;
-    animation: gradient 8s ease-in-out infinite;
+    animation: gradient 25s ease-in-out infinite;
 }
 
 @keyframes gradient {
@@ -304,6 +340,11 @@ p {
     100% {
         background-position: 25% 0%;
     }
+}
+
+.toprow {
+    display: flex !important;
+    align-items: center;
 }
 
 .home-left {
@@ -338,7 +379,7 @@ p {
 }
 
 .homesnap {
-    width: 110%;
+    width: 90%;
     margin-top: -5rem;
 }
 
@@ -350,7 +391,7 @@ p {
 
 /* wwd */
 #wwd {
-    padding: 4% 5% 0 !important;
+    padding: 4% 12% 0 !important;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -394,12 +435,16 @@ p {
 
 /* services */
 #services {
-    padding: 5% 7% !important;
+    padding: 8% 17% 5% !important;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.servicehead {
+    color: #000 !important;
 }
 
 .card {
@@ -589,9 +634,14 @@ p {
 
 /* About */
 #about {
-    padding: 7% 7% 0;
+    padding: 7% 18% 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#about .row {
+    display: flex !important;
     align-items: center;
 }
 
@@ -605,14 +655,16 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -16rem !important;
-    margin-bottom: -4rem !important;
-
 }
 
-.abt-left-lottie {
+.abt-left img {
+    width: 70%;
+    margin: 2rem;
+}
+
+/* .abt-left-lottie {
     width: 90%;
-}
+} */
 
 .abt-right {
     text-align: left;
@@ -624,7 +676,7 @@ p {
 /* team */
 #team,
 #portfolio {
-    padding: 7% 7% 0;
+    padding: 7% 17% 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -640,8 +692,8 @@ p {
 
 .team-card {
     height: 100% !important;
-    background-color: #fff2f2 !important;
-    border-radius: 10px !important;
+    background-color: #F1F1F1 !important;
+    border-radius: 8px !important;
     border: 0 solid !important;
     box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     padding: 0 0 4% !important;
@@ -666,7 +718,7 @@ p {
 
 .team-back-img {
     width: 100%;
-    border-radius: 10px 10px 0 0 !important;
+    border-radius: 8px 8px 0 0 !important;
     object-fit: cover;
 }
 
@@ -678,6 +730,46 @@ p {
     padding: 10px !important;
 }
 
+.modal-body p {
+    text-align: justify;
+}
+
+
+/* testimonal */
+#testimonial {
+    padding: 1% 5% 5% !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    display: flex;
+    padding: 3%;
+    height: 100%;
+    width: 80%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(39, 39, 39, 0.753) !important;
+}
+
+.client-img {
+    object-fit: cover;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+}
+
+.test-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 /*****Footer*****/
 #footer {
@@ -696,6 +788,7 @@ p {
     font-size: 1.8rem;
     font-family: 'Urbanist', sans-serif !important;
     font-weight: bold;
+    color: #fff !important;
 }
 
 .footer-para {
@@ -791,6 +884,9 @@ p {
     background-color: #007BB5 !important;
 }
 
+.soon {
+    width: 30%;
+}
 
 /* thank you */
 #thanks {

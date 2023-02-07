@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://kiruvin.com/</loc>
+  <lastmod>2023-10-10T11:48:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/index.html</loc>
+  <lastmod>2023-10-10T11:48:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/about.html</loc>
+  <lastmod>2023-10-10T12:12:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/services/digital-marketing.html</loc>
+  <lastmod>2023-10-03T08:05:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/services/it-development.html</loc>
+  <lastmod>2023-10-03T08:05:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/services/media-works.html</loc>
+  <lastmod>2023-10-03T08:05:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/services/event-management.html</loc>
+  <lastmod>2023-10-03T08:05:55+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/product.html</loc>
+  <lastmod>2023-10-10T12:14:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/portfolio.html</loc>
+  <lastmod>2023-10-10T12:12:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://kiruvin.com/contact.html</loc>
+  <lastmod>2023-10-03T08:03:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

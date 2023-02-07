@@ -111,9 +111,9 @@
         right: 0;
     }
 
-    .abt-left {
+    /* .abt-left {
         margin-top: -10rem !important;
-    }
+    } */
 
     .abt-left-lottie {
         width: 100%;
@@ -244,8 +244,41 @@
         display: none;
     }
 
+    /* about */
+    #about {
+        padding: 7% 4% 0;
+    }
+
+    .abt-right h2 {
+        text-align: center !important;
+    }
+
+    .abt-right p {
+        text-align: justify;
+    }
+
+    .abt-left img {
+        width: 80%;
+    }
+
     .abt-left-lottie {
         width: 90%;
+    }
+
+
+    .cbox #services {
+        padding: 5% 0% !important;
+    }
+
+    /* testimonal */
+    .client-img {
+        border-radius: 20px;
+        width: 180px;
+        height: 250px;
+    }
+
+    .test-text {
+        padding-top: 1.5rem;
     }
 
     /* team */
@@ -272,4 +305,21 @@
         border-radius: 50px !important;
         font-size: 20px !important;
     }
+
+    .soon {
+        width: 100%;
+    }
+
+    .row {
+        --bs-gutter-x: 0rem !important;
+    }
 }
+
+@media only screen and (max-width: 300px) {
+    .navbar-brand img {
+        height: 45px;
+    }
+}
+
+/* #D5A65B logocolor
+#FFCE0A  eyecolor */
